@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ExpandingMenu (0.4.0)
+  - Kingfisher (4.10.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ExpandingMenu (~> 0.4)
+  - Kingfisher
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ExpandingMenu
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ExpandingMenu: 3187a4ed1aa1aea85418e444c213e4cd6063c122
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+
+PODFILE CHECKSUM: ede5e1d46d94b9df6952be5858546c083f7f5966
+
+COCOAPODS: 1.9.1

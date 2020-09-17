@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pFc-qk-feS" customClass="RoomRankHeaderView" customModule="DouYu_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tSK-i5-cYg">
+                    <rect key="frame" x="20" y="24.5" width="335" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <segments>
+                        <segment title="贡献日榜"/>
+                        <segment title="贡献周榜"/>
+                        <segment title="粉丝榜"/>
+                    </segments>
+                    <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </segmentedControl>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="vsM-Yq-Mm6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tSK-i5-cYg" firstAttribute="leading" secondItem="pFc-qk-feS" secondAttribute="leading" constant="20" id="3Ii-nB-NGP"/>
+                <constraint firstItem="tSK-i5-cYg" firstAttribute="centerY" secondItem="pFc-qk-feS" secondAttribute="centerY" id="5Tf-0S-oKb"/>
+                <constraint firstItem="vsM-Yq-Mm6" firstAttribute="top" secondItem="pFc-qk-feS" secondAttribute="top" id="BfN-co-Lyp"/>
+                <constraint firstAttribute="bottom" secondItem="vsM-Yq-Mm6" secondAttribute="bottom" id="KlI-0X-ADF"/>
+                <constraint firstAttribute="trailing" secondItem="tSK-i5-cYg" secondAttribute="trailing" constant="20" id="XgZ-cR-iR8"/>
+                <constraint firstItem="vsM-Yq-Mm6" firstAttribute="leading" secondItem="pFc-qk-feS" secondAttribute="leading" id="gKU-ed-hKa"/>
+                <constraint firstAttribute="trailing" secondItem="vsM-Yq-Mm6" secondAttribute="trailing" id="iLg-5s-6EZ"/>
+                <constraint firstItem="tSK-i5-cYg" firstAttribute="centerX" secondItem="pFc-qk-feS" secondAttribute="centerX" id="tLH-eF-Bzq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bEy-Pc-CAU"/>
+            <connections>
+                <outlet property="bgImageView" destination="vsM-Yq-Mm6" id="y3h-e5-BQS"/>
+                <outlet property="segmentControl" destination="tSK-i5-cYg" id="KxG-Jf-D0R"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172.5" height="103.5"/>
+    </resources>
+</document>

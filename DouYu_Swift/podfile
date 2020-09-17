@@ -1,0 +1,15 @@
+xcodeproj 'DouYu_Swift.xcodeproj'
+  
+platform :ios, '8.0'
+use_frameworks!
+
+target 'DouYu_Swift' do
+
+pod 'Alamofire'
+pod 'Kingfisher'
+pod 'ExpandingMenu', '~> 0.4'
+
+
+
+end
+

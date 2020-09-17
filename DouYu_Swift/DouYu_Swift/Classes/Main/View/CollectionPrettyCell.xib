@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VUN-ta-DtU" customClass="CollectionPrettyCell" customModule="DouYu_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxD-WZ-bFD">
+                        <rect key="frame" x="0.0" y="162" width="46" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="tU1-ww-Wzf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="西安市" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冯提莫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQK-jK-P8l">
+                        <rect key="frame" x="0.0" y="141" width="140" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="g5I-uy-tUT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="za3-XP-FCr">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="136"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.43137254899999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMa-Va-2yR">
+                        <rect key="frame" x="77" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8BK-w3-rMP"/>
+                            <constraint firstAttribute="width" constant="60" id="CP8-4J-Bb7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conrnerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="za3-XP-FCr" firstAttribute="top" secondItem="VUN-ta-DtU" secondAttribute="top" id="9qF-hU-03y"/>
+                <constraint firstItem="pxD-WZ-bFD" firstAttribute="top" secondItem="AQK-jK-P8l" secondAttribute="bottom" constant="5" id="CfN-MW-XqD"/>
+                <constraint firstAttribute="trailing" secondItem="za3-XP-FCr" secondAttribute="trailing" id="EsP-f6-hfI"/>
+                <constraint firstAttribute="trailing" secondItem="CMa-Va-2yR" secondAttribute="trailing" constant="8" id="Feu-4g-eZc"/>
+                <constraint firstItem="AQK-jK-P8l" firstAttribute="leading" secondItem="VUN-ta-DtU" secondAttribute="leading" id="H3f-zC-x5o"/>
+                <constraint firstAttribute="trailing" secondItem="AQK-jK-P8l" secondAttribute="trailing" constant="5" id="P2Q-U7-dgQ"/>
+                <constraint firstItem="CMa-Va-2yR" firstAttribute="top" secondItem="VUN-ta-DtU" secondAttribute="top" constant="8" id="Y8d-C6-t9E"/>
+                <constraint firstItem="AQK-jK-P8l" firstAttribute="top" secondItem="za3-XP-FCr" secondAttribute="bottom" constant="5" id="dFS-Rf-sfM"/>
+                <constraint firstItem="pxD-WZ-bFD" firstAttribute="leading" secondItem="VUN-ta-DtU" secondAttribute="leading" id="mdw-Ix-zd0"/>
+                <constraint firstAttribute="bottom" secondItem="pxD-WZ-bFD" secondAttribute="bottom" constant="10" id="pbf-OO-TY3"/>
+                <constraint firstItem="za3-XP-FCr" firstAttribute="leading" secondItem="VUN-ta-DtU" secondAttribute="leading" id="sI4-G5-VLQ"/>
+            </constraints>
+            <size key="customSize" width="145" height="186"/>
+            <connections>
+                <outlet property="cityBtn" destination="pxD-WZ-bFD" id="LEa-v9-DUF"/>
+                <outlet property="iconImageView" destination="za3-XP-FCr" id="gBb-JM-xSl"/>
+                <outlet property="nickNameLabel" destination="AQK-jK-P8l" id="yht-CK-mOk"/>
+                <outlet property="onlineBtn" destination="CMa-Va-2yR" id="Hg5-zL-2xf"/>
+            </connections>
+            <point key="canvasLocation" x="200.72463768115944" y="149.33035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103.5" height="103.5"/>
+    </resources>
+</document>
