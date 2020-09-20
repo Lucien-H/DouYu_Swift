@@ -28,7 +28,7 @@ class AmuseViewController: BaseAnchorViewController {
         
         // 2.请求数据
         amuseVM.loadAmuseData {
-            // 2.1刷新表哥
+            // 2.1刷新表格
             self.collectionView.reloadData()
             
             // 2.2调整数据
